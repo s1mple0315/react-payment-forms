@@ -1,6 +1,11 @@
-import Close_button from "../../components/button/Close_button"
-import Id_badge from "../../components/id_badge/Id_badge"
-import styles from "./Refill_methods.module.css"
+import Button from "../../components/button/button";
+import Close_button from "../../components/button/Close_button";
+import Id_badge from "../../components/id_badge/Id_badge";
+import Input_icon from "../../components/input_fields/Input_icon";
+import Method from "../../components/payment_method/method";
+import styles from "./Refill_methods.module.css";
+
+
 const Refill_methods = () => {
   return (
     <div className={styles.refillWindow}>
@@ -11,9 +16,18 @@ const Refill_methods = () => {
           <Close_button onClick={null} />
         </div>
       </div>
-      
+      <div className="d-flex flex-column gap-4">
+        <Method />
+        <div>2</div>
+        <div>3</div>
+        <Input_icon title="Сумма для перевода" onClickIcon={null} />
+      </div>
+      <div className="d-flex flex-column gap-4">
+        <div className={styles.captcha}>{/* Placeholder for captcha */}</div>
+        <Button text="Продолжить" />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Refill_methods
+export default Refill_methods;

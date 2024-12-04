@@ -5,6 +5,7 @@
 }
 
 :root {
+  --method-bg: #F1F4F9;
   --border-form: 1px solid #F0EDED;
   --box-shadow: 0px 25px 35px 0px #DBD2D273;
   --border-radius-form: 18px;
@@ -14,6 +15,7 @@
   --text-grey: #7F7A95;
   --bg-white: #fff;
   --bg-light-grey: #F5F5F5;
+  --gradient-red: linear-gradient(to right, #FF4A74, #EF2B59)
   --gradient__bg: linear-gradient(to right, #73c97c, #42914a);
 }
 

@@ -25,3 +25,9 @@
   letter-spacing: 1px;
   color: #212121;
 }
+
+.inputBox .inputIcon{
+  right: 10px;
+  top: 17px;
+  cursor: pointer;
+}
