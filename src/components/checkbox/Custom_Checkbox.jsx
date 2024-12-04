@@ -1,12 +1,14 @@
-import styles from "./Checkbox.module.css"
+import styles from './Checkbox.module.css';
 
-const Custom_Checkbox = () => {
+const Checkbox = () => {
   return (
-    <label className={`${styles.checkboxContainer}`}>
-      <input className={`${styles.customCheckbox}`} type="checkbox" defaultChecked />
-      <span className={`${styles.checkmark}`}></span>
-    </label>
+    <div className={styles.wrapper}>
+      <label className={styles.checkBoxContainer}>
+        <input defaultChecked="checked" type="checkbox" />
+        <div className={styles.checkmark} />
+      </label>
+    </div>
   );
-};
+}
 
-export default Custom_Checkbox;
+export default Checkbox;

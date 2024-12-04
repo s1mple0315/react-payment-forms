@@ -2,7 +2,7 @@ import styles from "./Icons.module.css"
 
 const Card = () => {
   return (
-    <div className={styles.card}>
+    <div className={`${styles.card} ${styles.icon}`}>
       <svg
         width="22"
         height="23"

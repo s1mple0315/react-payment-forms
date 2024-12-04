@@ -1,7 +1,16 @@
 .card {
   background: var(--gradient-red);
 }
-div {
+
+.spb{
+  background: #fff;
+}
+
+.check{
+  background: var(--gradient__bg);
+}
+
+.icon {
   padding: 8px;
   border-radius: 12px;
 }

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 :root {
@@ -15,10 +16,15 @@
   --text-grey: #7F7A95;
   --bg-white: #fff;
   --bg-light-grey: #F5F5F5;
-  --gradient-red: linear-gradient(to right, #FF4A74, #EF2B59)
+  --bg-green: #61B469;
+  --gradient-red: linear-gradient(to right, #FF4A74, #EF2B59);
   --gradient__bg: linear-gradient(to right, #73c97c, #42914a);
 }
 
 body {
-  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+p{
+  margin: 0 !important;
 }
