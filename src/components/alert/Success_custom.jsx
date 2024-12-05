@@ -2,7 +2,7 @@ import styles from "./Success_custom.module.css"
 
 const Success_custom = ({text, icon}) => {
   return (
-    <div className={`${styles.success_custom} d-flex align-items-center`}>
+    <div className={`${styles.success_custom} d-flex align-items-center mb-2`}>
         {icon}
         <span className="ms-2">{text}</span>
     </div>

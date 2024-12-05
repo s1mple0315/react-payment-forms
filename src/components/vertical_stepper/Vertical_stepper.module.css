@@ -1,0 +1,57 @@
+.stepperItem {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 24px;
+  }
+  
+  .stepperItem:before {
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    position: relative;
+    z-index: 1;
+    flex: 0 0 24px;
+    height: 24px;
+    border-radius: 6px;
+    background: var(--gradient-red);
+    color: #fff; /* Set the text color inside the circle */
+    font-size: 14px; /* Adjust font size for the number */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .stepperItem:not(:last-child):after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transform: translateX(1.5rem);
+    width: 2px;
+    background: var(--gradient-red);
+  }
+  
+  .stepper {
+    --size: 22px;
+    counter-reset: step-counter; /* Initialize the step counter */
+  }
+  
+  .stepperItem:not(:last-child):after {
+    transform: translateX(calc(var(--size) / 2));
+  }
+  
+  .stepperContent {
+    /* Additional styling for content if needed */
+  }
+  
+  .stepperContent p {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-grey);
+  }
+  
+  .stepperTitle {
+    font-size: 16px;
+  }
+  
