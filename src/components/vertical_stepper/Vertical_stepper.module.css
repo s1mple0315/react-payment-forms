@@ -14,8 +14,8 @@
     height: 24px;
     border-radius: 6px;
     background: var(--gradient-red);
-    color: #fff; /* Set the text color inside the circle */
-    font-size: 14px; /* Adjust font size for the number */
+    color: #fff; 
+    font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +34,7 @@
   
   .stepper {
     --size: 22px;
-    counter-reset: step-counter; /* Initialize the step counter */
+    counter-reset: step-counter;
   }
   
   .stepperItem:not(:last-child):after {

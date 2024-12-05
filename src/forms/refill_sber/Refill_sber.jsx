@@ -9,7 +9,8 @@ import Animated_spinner from "../../components/loader/Animated_spinner";
 import Sber_card from "../../components/sber_card_wrapper/Sber_card";
 import Input_icon from "../../components/input_fields/Input_icon";
 import Input_Base from "../../components/input_fields/Input_Base";
-import Vertical_stepper from "../../components/vertical_stepper/Vertical_stepper";
+import Info_circle_white from "../../components/icons/Info_circle_white";
+import Success_darker from "../../components/alert/Success_darker";
 
 const Refill_sber = () => {
   return (
@@ -26,31 +27,31 @@ const Refill_sber = () => {
         text="Запрос успешно принят. Сделайте переводуказанной суммы по номеру телефона."
       />
       <Sber_card>
-        <div>
-          
+        <div className="mb-4">
+          <Success_darker
+            icon={<Info_circle_white />}
+            text="Скопируйте точную сумму, указанную в поле ниже. По этой сумме мы определим, что это ваш платеж и зачислим его автоматически."
+          />
         </div>
         <div className="d-flex flex-column gap-3">
-          <Input_icon title="Сумма для перевода"/>
-          <Input_icon title="Номер телефона для перевода"/>
-          <Input_Base title="Название банка для перевола"/>
+          <Input_icon title="Сумма для перевода" />
+          <Input_icon title="Номер телефона для перевода" />
+          <Input_Base title="Название банка для перевола" />
         </div>
       </Sber_card>
-      <div
-        className={`${styles.bottomContainer} d-flex align-items-center gap-3`}
-      >
-        <div className="d-flex align-items-center gap-2">
-          <div>
-            <Animated_spinner />
-            <div className={`${styles.countdownContainer}`}>
-              <p>Мы ожидаем ваш платеж</p>
-              <Countdown minutes={9} />
-            </div>
+
+      <div className="row d-flex align-items-center gap-3 mb-3">
+        <div className="col d-flex justify-content-between align-items-center gap-2">
+          <Animated_spinner />
+          <div className={`${styles.countdownContainer}`}>
+            <p>Мы ожидаем ваш платеж</p>
+            <Countdown minutes={9} />
           </div>
         </div>
-        <Button text="Оплачено" onClick={null} />
+        <div className="col d-flex justify-content-center">
+          <Button text="Оплачено" onClick={null} />
+        </div>
       </div>
-
-      <Vertical_stepper />
     </div>
   );
 };

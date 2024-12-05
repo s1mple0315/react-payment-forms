@@ -1,5 +1,5 @@
 .success_custom {
-  padding: 21px 17px;
+  padding: 12px 14px;
   background-color: #61b46926;
   border: 1px solid #61b46933;
   border-radius: 10px;
@@ -10,3 +10,17 @@
   font-weight: 700;
   color: #45a34e;
 }
+
+.success_darker {
+  padding: 12px 14px;
+  background-color: #3E854573;
+  border: 1px solid var(--gradient__bg);
+  border-radius: 10px;
+}
+
+.success_darker span {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+}
+

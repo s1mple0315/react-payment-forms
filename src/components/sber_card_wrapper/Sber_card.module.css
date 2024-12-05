@@ -1,6 +1,19 @@
-.sberCardWrapper{
-    background: var(--gradient__bg);
-    padding: 16px;
-    width: 100%;
-    border-radius: 10px;
+.sberCardWrapper {
+  background: var(--gradient__bg);
+  padding: 16px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.qrContainer {
+  height: 124px;
+  width: 124px;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  background-color: #fff;
+}
+
+.qrContainer > svg {
+  height: 100%;
+  width: 100%;
 }

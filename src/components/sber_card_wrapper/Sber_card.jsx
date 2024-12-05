@@ -5,7 +5,7 @@ import styles from "./Sber_card.module.css"
 
 const Sber_card = ({children}) => {
   return (
-    <div className={`${styles.sberCardWrapper}`}>
+    <div className={`${styles.sberCardWrapper} mb-3`}>
         <div className={`${styles.cardHeader} d-flex justify-content-between align-items-center mb-4`}>
             <Sber_light />
             <div className="d-flex justify-content-between align-items-center gap-2">
