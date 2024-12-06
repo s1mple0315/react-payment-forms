@@ -35,7 +35,6 @@ const Countdown = ({ minutes }) => {
   return (
     <div className={`${styles.countdown}`}>
       <p>{formatTime(timeLeft)}</p>
-      {/* {!isActive && <p>Время вышло!</p>} */}
     </div>
   );
 };

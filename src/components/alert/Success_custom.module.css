@@ -24,3 +24,12 @@
   color: #fff;
 }
 
+@media screen and (max-width: 430px) {
+  .success_custom span {
+    font-size: 12px;
+  }
+
+  .success_darker span {
+    font-size: 12px;
+  }
+}

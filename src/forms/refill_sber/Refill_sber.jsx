@@ -2,7 +2,6 @@ import Success_custom from "../../components/alert/success_custom";
 import Custom_Checkbox from "../../components/checkbox/Custom_Checkbox";
 import Close_button from "../../components/button/Close_button";
 import Id_badge from "../../components/id_badge/Id_badge";
-import styles from "./Refill_sber.module.css";
 import Countdown from "../../components/countdown/Countdown";
 import Button from "../../components/button/button";
 import Animated_spinner from "../../components/loader/Animated_spinner";
@@ -11,6 +10,8 @@ import Input_icon from "../../components/input_fields/Input_icon";
 import Input_Base from "../../components/input_fields/Input_Base";
 import Info_circle_white from "../../components/icons/Info_circle_white";
 import Success_darker from "../../components/alert/Success_darker";
+
+import styles from "./Refill_sber.module.css";
 
 const Refill_sber = () => {
   return (
@@ -40,15 +41,15 @@ const Refill_sber = () => {
         </div>
       </Sber_card>
 
-      <div className="row d-flex align-items-center gap-3 mb-3">
-        <div className="col d-flex justify-content-between align-items-center gap-2">
+      <div className=" d-flex align-items-center gap-3 mb-3">
+        <div className="d-flex justify-content-between align-items-center gap-2">
           <Animated_spinner />
           <div className={`${styles.countdownContainer}`}>
             <p>Мы ожидаем ваш платеж</p>
             <Countdown minutes={9} />
           </div>
         </div>
-        <div className="col d-flex justify-content-center">
+        <div className=" d-flex justify-content-center">
           <Button text="Оплачено" onClick={null} />
         </div>
       </div>

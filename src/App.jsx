@@ -7,10 +7,10 @@ import Transfer from "./forms/transfer/Transfer";
 const App = () => {
   return (
     <div className="container ">
-      {/* <Refill_initial /> */}
-      {/* <Refill_methods /> */}
-      {/* <Refill_sber /> */}
-      {/* <Invoice /> */}
+      <Refill_initial />
+      <Refill_methods />
+      <Refill_sber />
+      <Invoice />
       <Transfer />
     </div>
   );
