@@ -24,12 +24,29 @@
   color: #fff;
 }
 
+.success_white {
+  padding: 12px 14px;
+  background-color: #fff !important;
+  border: 1px solid var(--gradient__bg);
+  border-radius: 10px;
+}
+
+.success_white span {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-grey);
+}
+
 @media screen and (max-width: 430px) {
   .success_custom span {
     font-size: 12px;
   }
 
   .success_darker span {
+    font-size: 12px;
+  }
+
+  .success_white span {
     font-size: 12px;
   }
 }

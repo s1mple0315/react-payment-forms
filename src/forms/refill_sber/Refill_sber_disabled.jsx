@@ -5,15 +5,15 @@ import Id_badge from "../../components/id_badge/Id_badge";
 import Countdown from "../../components/countdown/Countdown";
 import Button from "../../components/button/button";
 import Animated_spinner from "../../components/loader/Animated_spinner";
-import Sber_card from "../../components/sber_card_wrapper/Sber_card";
-import Input_Base_green from "../../components/input_fields/Input_Base_green";
-import Info_circle_white from "../../components/icons/Info_circle_white";
-import Success_darker from "../../components/alert/Success_darker";
-import Input_icon_green from "../../components/input_fields/Input_icon_green";
+import Sber_card_disabled from "../../components/sber_card_wrapper/Sber_card_disabled";
+import Info_circle from "../../components/icons/Info_circle";
+import Input_icon from "../../components/input_fields/Input_icon";
+import Input_Base from "../../components/input_fields/Input_Base";
+import Success_white from "../../components/alert/Success_white";
 
 import styles from "./Refill_sber.module.css";
 
-const Refill_sber = () => {
+const Refill_sber_disabled = () => {
   return (
     <div className={`${styles.refillWindow}`}>
       <div className="d-flex justify-content-between align-items-center mb-3">
@@ -27,19 +27,19 @@ const Refill_sber = () => {
         icon={<Custom_Checkbox />}
         text="Запрос успешно принят. Сделайте переводуказанной суммы по номеру телефона."
       />
-      <Sber_card>
+      <Sber_card_disabled>
         <div className="mb-4">
-          <Success_darker
-            icon={<Info_circle_white />}
+          <Success_white
+            icon={<Info_circle />}
             text="Скопируйте точную сумму, указанную в поле ниже. По этой сумме мы определим, что это ваш платеж и зачислим его автоматически."
           />
         </div>
         <div className="d-flex flex-column gap-3">
-          <Input_icon_green title="Сумма для перевода" />
-          <Input_icon_green title="Номер телефона для перевода" />
-          <Input_Base_green title="Название банка для перевола" />
+          <Input_icon title="Сумма для перевода" isDisabled={true}/>
+          <Input_icon title="Номер телефона для перевода" isDisabled={true}/>
+          <Input_Base title="Название банка для перевола" isDisabled={true}/>
         </div>
-      </Sber_card>
+      </Sber_card_disabled>
 
       <div className=" d-flex align-items-center gap-3 mb-3">
         <div className="d-flex justify-content-between align-items-center gap-2">
@@ -57,4 +57,4 @@ const Refill_sber = () => {
   );
 };
 
-export default Refill_sber;
+export default Refill_sber_disabled;

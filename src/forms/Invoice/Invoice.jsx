@@ -10,51 +10,67 @@ import Button from "../../components/button/button";
 import Collapsible from "../../components/collapsible/Collapsible";
 import Vertical_stepper from "../../components/vertical_stepper/Vertical_stepper";
 import Info_wavy from "../../components/icons/Info_wavy";
+import Input_icon_green from "../../components/input_fields/Input_icon_green";
+
 import styles from "./Invoice.module.css";
 
 const Invoice = () => {
   return (
     <div className={`${styles.refillWindow}`}>
       <div className="d-flex justify-content-between align-items-center mb-3">
-        <h3>Пополнение</h3>
+        <div className={`${styles.invoiceHeader} d-flex flex-column`}>
+          <p>Перевод с карты на карту</p>
+          <h3>Счет на оплату</h3>
+        </div>
         <div className="d-flex justify-content-between align-items-center gap-2">
           <Id_badge id={337821} />
           <Close_button onClick={null} />
         </div>
       </div>
-      
+
       <div className="d-flex flex-column gap-3 mb-3">
         <Input_icon title="Сумма для перевода" />
-        <div className="d-flex align-items-center gap-2">
-          <Shop /> <strong>1win</strong> <p>https://1win.com</p>
+        <div
+          className={`${styles.shopIconContainer} d-flex align-items-center gap-2`}
+        >
+          <div>
+            <Shop />
+          </div>
+          <strong>1win</strong> <p>https://1win.com</p>
         </div>
-        <div className="d-flex align-items-center gap-2">
-          <Wallet />{" "}
+        <div
+          className={`${styles.walletIconContainer} d-flex align-items-center gap-2`}
+        >
+          <Wallet />
           <strong>
             Оплатите <span>ровно 1000$ </span>одним переводом
           </strong>
         </div>
       </div>
 
-      <Sber_card></Sber_card>
+      <Sber_card>
+        <div className="d-flex flex-column gap-3">
+          <Input_icon_green title="Номер карты получителя" />
+          <Input_icon_green title="Имя получителя" />
+        </div>
+      </Sber_card>
 
-      <div className="row d-flex align-items-center gap-3 mb-3">
-        <div className="col d-flex justify-content-between align-items-center gap-2">
+      <div className=" d-flex align-items-center gap-3 mb-3">
+        <div className="d-flex justify-content-between align-items-center gap-2">
           <Animated_spinner />
           <div className={`${styles.countdownContainer}`}>
             <p>Мы ожидаем ваш платеж</p>
             <Countdown minutes={9} />
           </div>
         </div>
-        <div className="col d-flex justify-content-center">
+        <div className={`${styles.invoicePaidButtonContainer}`}>
           <Button text="Оплачено" onClick={null} />
         </div>
       </div>
 
-    <Collapsible icon={<Info_wavy />} title="Инструкция по оплате">
+      <Collapsible icon={<Info_wavy />} title="Инструкция по оплате">
         <Vertical_stepper />
-    </Collapsible>
-
+      </Collapsible>
     </div>
   );
 };

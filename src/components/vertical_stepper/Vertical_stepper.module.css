@@ -42,7 +42,7 @@
   }
   
   .stepperContent {
-    /* Additional styling for content if needed */
+    width: 100%;
   }
   
   .stepperContent p {
@@ -50,8 +50,11 @@
     font-weight: 700;
     color: var(--text-grey);
   }
+
+  .stepperContent p > span {
+    color: #F63864;
+  }
   
   .stepperTitle {
     font-size: 16px;
   }
-  

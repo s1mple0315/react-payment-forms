@@ -1,6 +1,7 @@
 .refillWindow{
     /* width: 50%; */
     padding: 24px;
+    max-width: 460px;
     box-shadow: var(--box-shadow);
     border: var(--border-form);
     border-radius: var(--border-radius-form);
@@ -11,4 +12,16 @@
     height: 54px;
     border: var(--border-form);
     border-radius: var(--border-radius);
+}
+
+.methodsHeader h3{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: var(--text-title-color);
+}
+
+.methodsHeader p{
+    font-size: 14px;
+    color: var(--text-grey);
 }

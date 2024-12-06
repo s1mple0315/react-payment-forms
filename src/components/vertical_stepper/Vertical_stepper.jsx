@@ -1,3 +1,4 @@
+import Input_icon from "../input_fields/Input_icon";
 import styles from "./Vertical_stepper.module.css";
 
 const Vertical_stepper = () => {
@@ -19,7 +20,7 @@ const Vertical_stepper = () => {
           <h3 className={styles.stepperTitle}>
             Скопируйте и вставьте номер карты
           </h3>
-          <p>Some desc text</p>
+          <Input_icon />
         </div>
       </li>
       <li className={styles.stepperItem}>
@@ -29,12 +30,13 @@ const Vertical_stepper = () => {
             Переводите ровно ту сумму, которая указанав противном случае платеж
             не будет зачислен только после проверки перевода
           </p>
+          <Input_icon />
         </div>
       </li>
       <li className={styles.stepperItem}>
         <div className={styles.stepperContent}>
           <h3 className={styles.stepperTitle}>Совершите перевод и нажмите на кнопку</h3>
-          <p>После совершения перевода нажмите на кнопку Я оплатил, чтобы система начала поиск вашего платежа</p>
+          <p>После совершения перевода нажмите на кнопку <span>Я оплатил</span>, чтобы система начала поиск вашего платежа</p>
         </div>
       </li>
     </ol>

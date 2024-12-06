@@ -33,7 +33,7 @@ const CountdownWithHours = ({ initialTimeInSeconds }) => {
   const { hours, minutes, seconds } = formatTime(timeLeft);
 
   return (
-    <div>
+    <div className={styles.countdownContainer}>
       <p className={styles.countdown}>
         {hours}:{minutes}:{seconds}
       </p>

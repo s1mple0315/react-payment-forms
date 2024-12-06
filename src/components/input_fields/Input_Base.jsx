@@ -1,9 +1,9 @@
 import styles from "./Input_Styles.module.css"
 
-const Input_Base = ({title}) => {
+const Input_Base = ({title, isDisabled}) => {
   return (
-    <div className={`${styles.inputBox}`}>
-      <input type="text" required="" placeholder="Write here....."/>
+    <div className={`${styles.inputBox} ${isDisabled ? styles.disabled : ''}`}>
+      <input type="text" required="" placeholder="Write here....." disabled={isDisabled}/>
       <span>{title}</span>
     </div>
   );
