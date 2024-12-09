@@ -28,6 +28,7 @@ const Refill_initial = () => {
         <Input_Base
           title="Сумма для перевода"
           onChange={handleInputChange} 
+          // isDisabled={true}
         />
         <Input_Base
           title="Название магазина"

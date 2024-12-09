@@ -2,8 +2,8 @@ import styles from "./Input_Styles.module.css";
 
 const Input_icon = ({ title, onClickIcon, isDisabled }) => {
   return (
-    <div className={`${styles.inputBox} ${isDisabled ? styles.disabled : ''}`}>
-      <input type="text" required="" placeholder="Write here....." disabled={isDisabled} />
+    <div className={`${styles.inputBox} ${isDisabled ? styles.grey : ''}`}>
+      <input type="text"  placeholder="data here....." disabled={true} />
       <span>{title}</span>
       <svg
         className={`${styles.inputIcon} position-absolute`}
