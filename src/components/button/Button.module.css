@@ -63,3 +63,15 @@
 .buttonIconRed > svg {
   margin-right: 10px;
 }
+
+.buttonGreen {
+  width: 100%;
+  padding: 14.5px 0;
+  color: #61B469;
+  border-radius: 8px;
+  background-color: #61B46926;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+}
+
