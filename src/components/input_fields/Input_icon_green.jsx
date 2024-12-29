@@ -3,7 +3,7 @@ import styles from "./Input_Styles.module.css";
 const Input_icon_green = ({ title, onClickIcon }) => {
   return (
     <div className={`${styles.inputBoxGreen}`}>
-      <input type="text" required="" placeholder="Write here....." />
+      <input type="text" disabled="true" placeholder="Write here....." />
       <span>{title}</span>
       <svg
         className={`${styles.inputIcon} position-absolute`}

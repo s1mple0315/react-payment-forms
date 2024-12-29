@@ -7,9 +7,8 @@ const Input_left_icon = ({ title, icon, onClickIcon, isDisabled }) => {
       <input
         className={`${styles.inputWithLeftIcon}`}
         type="text" 
-        required=""
-        placeholder="Write here....."
-        disabled={isDisabled}
+        placeholder="Data here....."
+        disabled={true}
       />
       <span>{title}</span>
     </div>
